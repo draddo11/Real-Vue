@@ -3,3 +3,8 @@
     <h1>This is a page for {{ $route.params.username }}</h1>
   </div>
 </template>
+<script>
+export default {
+  props: ["username"]
+};
+</script>
