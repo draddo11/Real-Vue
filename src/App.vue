@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link :to="{ name :'event-list'}">list</router-link> |
-      <router-link :to="{ name :'event-show'}">Show</router-link> |
-      <router-link :to="{ name :'event-create'}">Create</router-link>|
-       <router-link :to="{ name: 'user', params: { username: 'gregg' }  }">Gregg</router-link>
+      <router-link :to="{ name: 'event-list' }">list</router-link> |
+      <router-link :to="{ name: 'event-show' }">Show</router-link> |
+      <router-link :to="{ name: 'event-create' }">Create</router-link>|
+      <router-link :to="{ name: 'user', params: { username: 'gregg' } }"
+        >Gregg</router-link
+      >
     </div>
     <router-view />
   </div>
