@@ -40,10 +40,10 @@ const routes = [
   //   component: User,
   //   props: true
   // },
-  {
-    path: "*",
-    component: FileNotFound
-  }
+  // {
+  //   path: "*",
+  //   component: FileNotFound
+  // }
 ];
 
 const router = new VueRouter({
