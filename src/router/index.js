@@ -34,7 +34,7 @@ const routes = [
     name: "event-show",
     component: EventShow,
     props: true
-  },
+  }
   // {
   //   path: "/user/:username",
   //   name: "user",
