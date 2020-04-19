@@ -18,7 +18,7 @@ export default {
       event: {
         id: 1,
         title: "Beach Cleanup",
-        date: "Tue May 15 2018",
+        date: "Tue May 15 2028",
         time: "6:00",
         attendees: [
           { id: "abc123", name: "Adam Jahr" },
