@@ -1,7 +1,7 @@
 <template>
     <div id="app">
 
-        <input>
+        <input/>
     </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      key: value
+      name : "chris",
     }
   }
 }
