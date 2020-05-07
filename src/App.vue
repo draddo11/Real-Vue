@@ -2,6 +2,9 @@
   <div id="app">
     <NavBar/>
     <router-view/>
+    <router-link>
+    <v-btn> Move to heroes </v-btn>
+    </router-link>
   </div>
 </template>
 

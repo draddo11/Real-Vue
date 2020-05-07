@@ -1,15 +1,16 @@
 <template>
     <div id="app">
 
-        <input
+        <input>
     </div>
 </template>
 
 <script>
 export default {
-   new Vue({
-       el:"",
-       data:""
-   }) 
+  data() {
+    return {
+      key: value
+    }
+  }
 }
 </script>
