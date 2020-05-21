@@ -1,3 +1,4 @@
 <template>
-  <h1>Create Event, {{$store.state.user.name}}</h1>
+  <h1>Create Event, {{userName}}</h1>
+  <p>This event is created by {{ userName }}</p>
 </template>
