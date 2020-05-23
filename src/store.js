@@ -14,8 +14,14 @@ export default new Vuex.Store({
       'education',
       'food',
       'community'
-    ]
+    ],
+    catLength: state => {
+      return state.categories.length
+    }
   },
   mutations: {},
+  getters:{
+
+  },
   actions: {}
 })

@@ -8,6 +8,9 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  computed: mapState(['user', 'categories'])
+  computed: mapState(['user', 'categories']),
+  catLength: state => {
+    return state.categories.length
+  }
 }
 </script>
