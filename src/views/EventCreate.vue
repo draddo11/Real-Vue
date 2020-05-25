@@ -2,17 +2,17 @@
 <div>
   <h1>Create Event, {{user.name}}</h1>
   <p>This event is created by {{ user.name }}</p>
-  <h1>Create Event, {{this.$store.categories.lenght}}</h1>
+  <!-- <h1>Create Event, {{this.$store.categories.lenght}}</h1> -->
+  <p>{{ getEventById(2) }}</p>
 </div>
 </template>
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
+
 export default {
   computed: {
-    // mapState(['user', 'categories']),
-    catLength() {
-      return state.categories.length
-    }
+    ...mapGetters(['getEventById']),
+    ...mapState(['user', 'categories'])
   }
 }
 </script>

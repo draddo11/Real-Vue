@@ -15,13 +15,16 @@ export default new Vuex.Store({
       'food',
       'community'
     ],
-    catLength: state => {
-      return state.categories.length
-    }
+    events: [
+      { id: 1, title: '...', organizer: '...' },
+      { id: 2, title: '...', organizer: '...' },
+      { id: 3, title: '...', organizer: '...' },
+      { id: 4, title: '...', organizer: '...' }
+    ]
   },
   mutations: {},
   actions: {},
-  getters:{
+  getters: {
     getEventById: state => id => {
       return state.events.find(event => event.id === id)
     }
