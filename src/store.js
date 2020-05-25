@@ -20,8 +20,10 @@ export default new Vuex.Store({
     }
   },
   mutations: {},
+  actions: {},
   getters:{
-
-  },
-  actions: {}
+    getEventById: state => id => {
+      return state.events.find(event => event.id === id)
+    }
+  }
 })
