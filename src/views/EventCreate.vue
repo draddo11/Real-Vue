@@ -13,6 +13,11 @@ export default {
   computed: {
     ...mapGetters(['getEventById']),
     ...mapState(['user', 'categories'])
+  },
+  method: {
+    incrementCount() {
+      this.$store.commit('INCREMENT_COUNT')
+    }
   }
 }
 </script>
