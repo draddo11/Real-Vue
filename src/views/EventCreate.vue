@@ -4,6 +4,7 @@
   <p>This event is created by {{ user.name }}</p>
   <!-- <h1>Create Event, {{this.$store.categories}}</h1> -->
   <p>{{ getEventById(2) }}</p>
+  <button @click="incrementCount">Increment</button>
 </div>
 </template>
 <script>
