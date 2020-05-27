@@ -5,6 +5,7 @@
   <!-- <h1>Create Event, {{this.$store.categories}}</h1> -->
   <p>{{ getEventById(2) }}</p>
   <button @click="incrementCount">Increment</button>
+  <input type="number" v-model.number="incrementBy">
 </div>
 </template>
 <script>
