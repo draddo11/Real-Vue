@@ -17,7 +17,7 @@ export default {
   },
   method: {
     incrementCount() {
-      this.$store.commit('INCREMENT_COUNT')
+      this.$store.commit('INCREMENT_COUNT',this.incrementBy)
     }
   }
 }
