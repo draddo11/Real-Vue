@@ -21,7 +21,7 @@ export default new Vuex.Store({
       { id: 3, title: '...', organizer: '...' },
       { id: 4, title: '...', organizer: '...' }
     ],
-    count: 0
+    count: 0,
   },
   mutations: {
     INCREMENT_COUNT(state) {
