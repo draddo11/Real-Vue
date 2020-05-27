@@ -28,7 +28,10 @@ export default new Vuex.Store({
       state.count += 1
     }
   },
-  actions: {},
+  actions: { updateCount({ state, commit }, incrementBy) {
+    if (state.user) {
+      commit('INCREMENT_COUNT', incrementBy)
+    } },
   getters: {
     getEventById: state => id => {
       return state.events.find(event => event.id === id)
