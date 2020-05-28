@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    user: { id: 'abc123', name: 'Adam Jahr' },
+    user: { id: 'abc123', name: 'Adam Fyre' },
     categories: [
       'sustainability',
       'nature',
@@ -33,10 +33,10 @@ export default new Vuex.Store({
       if (state.user) {
         commit('INCREMENT_COUNT', incrementBy)
       }
+    },
+    getters: {
+      getEventById: state => id => {
+        return state.events.find(event => event.id === id)
+      }
     }
-    // getters: {
-    //   getEventById: state => id => {
-    //     return state.events.find(event => event.id === id)
-    //   }
-  }
 })
