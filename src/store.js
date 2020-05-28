@@ -21,20 +21,22 @@ export default new Vuex.Store({
       { id: 3, title: '...', organizer: '...' },
       { id: 4, title: '...', organizer: '...' }
     ],
-    count: 0,
+    count: 0
   },
   mutations: {
     INCREMENT_COUNT(state) {
       state.count += 1
     }
   },
-  actions: { updateCount({ state, commit }, incrementBy) {
-    if (state.user) {
-      commit('INCREMENT_COUNT', incrementBy)
-    } },
-  getters: {
-    getEventById: state => id => {
-      return state.events.find(event => event.id === id)
+  actions: {
+    updateCount({ state, commit }, incrementBy) {
+      if (state.user) {
+        commit('INCREMENT_COUNT', incrementBy)
+      }
     }
+    // getters: {
+    //   getEventById: state => id => {
+    //     return state.events.find(event => event.id === id)
+    //   }
   }
 })
