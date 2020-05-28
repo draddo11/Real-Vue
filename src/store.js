@@ -39,4 +39,5 @@ export default new Vuex.Store({
         return state.events.find(event => event.id === id)
       }
     }
+  }
 })
